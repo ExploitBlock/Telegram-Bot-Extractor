@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Telegram Bot Extractor</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h3>Telegram Bot Info</h3>
+  <div id="loading" style="display: none;">
+    <div class="spinner"></div>
+    <span>Scanning page...</span>
+  </div>
+  <div id="results">
+    <div>
+      <p><strong>Links:</strong></p>
+      <ul id="botLinks"></ul>
+    </div>
+    <div>
+      <p><strong>Bots:</strong></p>
+      <ul id="botNames"></ul>
+    </div>
+    <div>
+      <p><strong>Tokens:</strong></p>
+      <ul id="botTokens"></ul>
+    </div>
+    <div>
+      <p><strong>Chat IDs:</strong></p>
+      <ul id="chatIds"></ul>
+    </div>
+  </div>
+  <div id="actionButtons" style="margin-top: 15px; text-align: center;">
+    <button id="clearAll">Clear All</button>
+  </div>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
