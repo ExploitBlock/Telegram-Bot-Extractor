@@ -9,7 +9,6 @@ A Chrome extension that scans the current web page for Telegram bot links, token
   - Telegram bot links (`t.me/...`)
   - Bot tokens (`123456789:AA...`)
   - Chat IDs
-  - Telegram API URLs
 - Copy results to clipboard with one click
 - Clear all results easily
 

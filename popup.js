@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('botLinks').innerHTML = '';
     document.getElementById('botTokens').innerHTML = '';
     document.getElementById('chatIds').innerHTML = '';
-    document.getElementById('apiUrls').innerHTML = '';
     updateStatus("All results cleared");
   });
 });
@@ -53,14 +52,12 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 });
 
 function updatePopup(data) {
-  updateList('botLinks', data.botLinks); // Links
-  updateList('botNames', data.botNames); // Bots
-  updateList('botTokens', data.tokens); // Tokens
-  updateList('chatIds', data.chatIds);  // Chat IDs
+  updateList('botLinks', data.links);    // Links (API URLs and t.me)
+  updateList('botTokens', data.tokens);  // Bot Tokens
+  updateList('chatIds', data.chatIds);   // Chat IDs
 
   if (
-    data.botLinks.length === 0 &&
-    data.botNames.length === 0 &&
+    data.links.length === 0 &&
     data.tokens.length === 0 &&
     data.chatIds.length === 0
   ) {
