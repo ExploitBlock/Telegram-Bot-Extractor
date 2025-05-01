@@ -1,14 +1,14 @@
 # Telegram Bot Extractor
 
-A Chrome extension that scans the current web page for Telegram bot links, tokens, chat IDs, and API URLs.  
+A Chrome extension that scans the current web page for Telegram bot links, chatIDs and tokens. 
 **Intended for security researchers and analysts investigating phishing or suspicious pages.**
 
 ## Features
 
 - Extracts:
-  - Telegram bot links (`t.me/...`)
-  - Bot tokens (`123456789:AA...`)
+  - Links (e.g., `https://api.telegram.org/bot...`)
   - Chat IDs
+  - Tokens (e.g., `123456789:AA...`)
 - Copy results to clipboard with one click
 - Clear all results easily
 
